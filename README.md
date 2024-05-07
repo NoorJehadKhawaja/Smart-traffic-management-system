@@ -15,25 +15,25 @@ display.clear_output()
 
 import ultralytics
 ultralytics.checks()
-# Git clone method (for development)
+Git clone method (for development)
 
-# %cd {HOME}
-# !git clone github.com/ultralytics/ultralytics
-# %cd {HOME}/ultralytics
-# !pip install -e .
+%cd {HOME}
+!git clone github.com/ultralytics/ultralytics
+%cd {HOME}/ultralytics
+!pip install -e .
 
-# from IPython import display
-# display.clear_output()
+ from IPython import display
+display.clear_output()
 
-# import ultralytics
-# ultralytics.checks()
+import ultralytics
+ultralytics.checks()
 from ultralytics import YOLO
 
 from IPython.display import display, Image
 !mkdir {HOME}/datasets
 %cd {HOME}/datasets
 
-#we use aroboflow website to make our dataset with annotaion
+# we use aroboflow website to make our dataset with annotaion
 
 !pip install roboflow
 
