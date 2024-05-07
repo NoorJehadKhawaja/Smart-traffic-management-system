@@ -6,7 +6,7 @@ we use google colab to run our code
 import os
 HOME = os.getcwd()
 print(HOME)
-# Pip install method (recommended)
+Pip install method (recommended)
 
 !pip install ultralytics==8.0.196
 
