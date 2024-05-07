@@ -2,7 +2,9 @@
 using custom dataset for object detection using YOLO model optimizes traffic flow, prioritizes emergency vehicles, and enhances safety at intersections.
 
 we use google colab to run our code
+
 !nvidia-smi
+
 import os
 HOME = os.getcwd()
 print(HOME)
