@@ -45,8 +45,11 @@ dataset = version.download("yolov8")
 %cd {HOME}
 
 !yolo task=detect mode=train model=yolov8s.pt data={dataset.location}/data.yaml epochs=100 imgsz=800 plots=True
+
 !ls {HOME}/runs/detect/train/
+
 !yolo task=detect mode=val model={HOME}/runs/detect/train/weights/best.pt data={dataset.location}/data.yaml
+
 %cd {HOME}
 !yolo task=detect mode=predict model={HOME}/runs/detect/train/weights/best.pt conf=0.25 source={dataset.location}/test/images save=True
 
